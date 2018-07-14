@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditorActivity">
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:layout_marginTop="@dimen/top"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/product" />
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_name_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/product_name"
+                android:inputType="textCapWords" />
+            <!-- Breed field -->
+            <RelativeLayout
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/decrement"
+                    android:layout_width="@dimen/imagebutton"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+                <EditText
+                    android:id="@+id/quantity"
+                    android:layout_width="@dimen/editQuantity"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/quantityLeft"
+                    android:layout_toRightOf="@id/decrement"
+                    android:gravity="center"
+                    android:hint="@string/product_quantity"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/qli"
+                    android:text="@string/label_qli" />
+
+
+                <ImageButton
+                    android:id="@+id/increment"
+                    android:layout_width="@dimen/imagebutton"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/quantityLeft"
+                    android:layout_toRightOf="@id/quantity"
+
+                    android:src="@drawable/ic_add_box_black_24dp"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Gender category -->
+
+
+    <!-- Label -->
+    <!-- Measurement category -->
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:orientation="horizontal">
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:text="@string/price" />
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <!-- Weight field -->
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:inputType="number" />
+
+            <!-- Units for weight (kg) -->
+            <TextView
+                android:id="@+id/label_euro_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/right"
+                android:paddingTop="@dimen/fab_margin"
+                android:text="@string/euro" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginLeft"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/partner" />
+
+        <!-- Input fields -->
+        <LinearLayout
+            android:layout_width="@dimen/width"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/edit_name_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_partner"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_Partner_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/partner_contact"
+                android:inputType="phone" />
+
+            <ImageButton
+                android:id="@+id/callPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

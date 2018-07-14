@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="paddingleft">4dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="top">20dp</dimen>
+    <dimen name="width">0dp</dimen>
+    <dimen name="right">100dp</dimen>
+    <dimen name="string">8dp</dimen>
+
+</resources>

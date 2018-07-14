@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_margin">20dp</dimen>
+    <dimen name="empty">250dp</dimen>
+    <dimen name="imagebutton">40dp</dimen>
+    <dimen name="editQuantity">130dp</dimen>
+    <dimen name="quantityLeft">10dp</dimen>
+    <dimen name="qli">62dp</dimen>
+    <dimen name="layoutWidth">50dp</dimen>
+    <dimen name="layoutRight">80dp</dimen>
+</resources>
